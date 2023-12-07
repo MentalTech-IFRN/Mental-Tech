@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="pasta_css/login.css">
+    <link rel="stylesheet" href="pasta_css/cadastro.css">
 </head>
 <body>
     <div class="container">
@@ -17,23 +17,24 @@
             <div class="form">
                 <div class="login">
                     <img src="imagens_projeto/user.png">
-                    <h3>Login</h3>
+                    <h3>Cadastro</h3>
                 </div>
                 <form action="">
+                    <div id="nome">
+                        <input type="text" id="nomeId" placeholder="Nome">
+                        <input type="text" id="sobrenomeId" placeholder="Sobrenome">
+                    </div>
                     <input type="email" id="emailId" placeholder="Email ou número de telefone">
                     <input type="password" id="senhaId" placeholder="Senha">
-                    <input id="entrar" type="button" value="Entrar">
+                    <input type="password" id="senhaId" placeholder="Digite novamente a senha">
+                    <input id="entrar" type="button" value="Criar uma conta">
                 </form>
                 <div class="lembrar">
                     <input type="checkbox" id="checkId">
-                    <label for="checkId">Lembrar senha</label>
+                    <label for="checkId">Li e concordo com os termos de serviço</label>
                 </div>
-                <h4 style="font-family: arial; font-size: 13px; margin-left: -98px;">Não tem uma conta? <a href="cadastro.html" style="text-decoration: none;color: rgb(62, 104, 243);">Cadastre-se</a></h4>
             </div>
             <div class="conectar">
-                <br>
-                <br>
-                <br>
                 <h5 style="color: gray; ">Entrar com:</h5>
                 <div>
                     <a href="https://accounts.google.com"><img src="imagens_projeto/google.png"></a>
