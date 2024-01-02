@@ -1,0 +1,135 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+   background-color: white;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 45%;
+    background-color: rgb(219, 215, 215);
+}
+.box1 img{
+    height: 100%;
+    width: 350px;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width:55%;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 70%;
+    padding: 5px;
+    margin-top: -80px;
+    border-radius: 10px;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 150px;
+    margin: 10px;
+}
+.login h3{
+    display: flex;
+    text-align: center;
+    font-family:arial;
+    font-size: 28px;
+    color: rgb(30, 30, 134);
+    padding: 10px;
+}
+.login img{
+    display: flex;
+    width: 80px;
+    height: 80px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: Arial;
+    font-size: 15px;
+    width: 300px;
+    height: 50px;
+    opacity: 90%;
+}
+.form h4{
+    display: flex;
+    font-family: Arial;
+    font-size: 13px;
+    margin-top: 90px;
+    margin-left: -90px;
+}
+input{
+    padding: 10px;
+    background-color: rgb(112, 143, 211);
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    outline: none;
+}
+input::placeholder{
+    color: white;
+}
+input[type="button"]{
+    background-color: rgb(25, 40, 90);
+    cursor: pointer;
+}
+#entrar:hover{
+    background-color: rgb(108, 108, 161);
+}
+.lembrar{
+    position: relative;
+    top: 85px;
+    left: -98px;
+    font-family: arial;
+    font-size: 13px;
+}
+.conectar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: arial;
+    width: 400px;
+    height: 60px;
+    margin: 10px;
+}
+.conectar a{
+    display: flex;
+    width: 15px;
+    height: 20px;
+    margin: 15px;
+    padding-top: 3px;
+}
+.conectar img{
+    border-radius: 10px;
+}
+.conectar div{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ADD8E6;
+    width: 100%;
+    height: 15%;
+    padding: 20px;
+}
+.logo-container {
+    flex-grow: 1;
+}
+.logo {
+    max-width: 200px;
+    padding-left: 55px;
+    padding-top: 20px;
+}
+.menu a {
+    color: black;
+    margin-right: 10px;
+    text-decoration: none;
+    padding-right: 55px;
+    font-size: 17px;
+    font-family: arial;
+}
+.menu a.ative {
+    color: white;
+    text-decoration:underline;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    width: 100%;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 75vh;
+    gap: 10px;
+    background-color: black;
+}
+.usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 190px;
+    margin-top: -50px;
+}
+.usuario img{
+    width: 100px;
+    height: 110px;
+    padding-top: 10px;
+}
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+}
+#principal{
+    display: flex;
+    flex-direction: row;
+    font-family: arial;
+    font-size: 15px;
+    color: white;
+    padding-top: 10px;
+}
+#secundario{
+    font-family: arial; 
+    font-size: 12px;
+    margin-left: 30px;
+    color: rgb(140, 140, 255);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 75vh;
+    background-color: white;
+}
+.informs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    font-size: 15px;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid black;
+}
+#seguidores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 80px;
+    margin-left: 10px;
+    
+}
+#seguindo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 80px;
+    margin-left: 10px;
+    
+}
+#republicados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 80px;
+    margin-left: 10px;
+}
+#publicacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 80px;
+    margin-left: 10px;
+}
+.publicacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 390px;
+    border-bottom: 1px solid black;
+    
+}
+.publicacoes-box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+#perfil{
+    display: flex;
+    flex-direction: row;
+    font-family: arial;
+    font-size: 15px;
+    padding: 10px;
+}
+#publicacao1{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(218, 215, 215);
+}
+#publicacao2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(218, 215, 215);
+}
+#publicacao3{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(218, 215, 215);
+}
+ p{
+    width: 250px;
+    font-family: arial;
+    font-size: 15px;
+    margin-left: 30px;
+}
+.funcoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+    margin-left: 70px;
+}
+button{
+    background-color: rgb(218, 215, 215);
+}
+.funcoes img{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+}
+footer {
+    display: flex;
+    background-color: #ADD8E6;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position:absolute;
+    bottom: 0px;
+    width:100%;
+    height: 10%;
+    font-family: arial;
+}
