@@ -11,6 +11,33 @@
 <body>
   <header>
     <div class="logo-container">
+      <img src="imagens_projeto/logoMentalTech.svg" alt="Logo" class="logo">
+      <img src="imagens_projeto/nome mt.svg" alt="Name_ogo" class="name_logo">
+    </div>
+    <div>
+
+    </div>
+    <nav class="menu">
+      <a href="index.html" class="ative">Página inicial</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="cronograma.html" >Cronograma</a>
+      <a href="conta.html">Conta</a>
+      <a href="sobre_nos.html">Sobre nós</a>
+    </nav>
+
+    <div class="header_menu_hide">
+      <input type="checkbox" id="botao">
+      <label for="botao">&#9776;</label>
+      <ul class="menu_hide">
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="cronograma.html" class="ative">Cronograma</a></li>
+          <li><a href="conta.html">Conta</a></li>
+          <li><a href="sobre_nos.html">Sobre nós</a></li>
+      </ul>
+  </div>
+    <!--
+    <div class="logo-container">
       <img src="/imagens_projeto/logoMentalTech.svg" alt="Logo" class="logo">
       <img src="/imagens_projeto/nome mt.svg" alt="nome Mental Tech" class="logoname">
     </div>
@@ -25,31 +52,42 @@
       <a href="sobre_nos.html">Sobre nós</a>
       <button class="button">Conta</button>
     </nav>
+    -->
   </header>
-  <div class="textos">
-    <h2>Cuidar da sua saúde mental e física é importante!</h2>
-    <wbr>
-    <p>Use o site Mental Tech para ajudar a controlar sua rotina.</p>
-    <wbr>
-    <p>Lembre-se: você em primeiro lugar!</p>
-    <wbr>
-    <h3>Use nossas ferramentas para facilitar, converse com profissionais, programe sua agenda. </h3>
-    <img id="gif" src="/imagens_projeto/animaç╞o.gif">
+  <div class="intro_content">
+    <div class="textos">
+      <h2>Cuidar da sua saúde mental e física é importante!</h2>
+
+      <p>Use o site Mental Tech para ajudar a controlar sua rotina.</p>
+
+      <p>Lembre-se: você em primeiro lugar!</p>
+
+      <h3>Use nossas ferramentas para facilitar, converse com profissionais, programe sua agenda. </h3>
+      
+    </div>
+    <div class="gif">
+      <img id="gif" src="/imagens_projeto/animaç╞o.gif">
+    </div>
   </div>
   <main>
     <div class="quadrado-container">
+        <div class="quadrado">
+            <img src="/imagens_projeto/conversa.svg" alt="Conversa" class="quadrado-image">
+          <h4 class="quadrado-title">Chat de interação</h4>
+          <p>Acesse o chat e se comunique com outros estudantes.</p>
+        </div>
+
       <div class="quadrado">
-        <img src="/imagens_projeto/conversa.svg" alt="Conversa" class="quadrado-image">
-        <h4 class="quadrado-title">Chat de interação</h4>
-        <p>Acesse o chat e se comunique com outros estudantes.</p>
-      </div>
-      <div class="quadrado">
-        <img src="/imagens_projeto/calendario.svg" alt="Calendário" class="quadrado-image">
+        <a href="/cronograma.html">
+          <img src="/imagens_projeto/calendario.svg" alt="Calendário" class="quadrado-image">
+        </a>
         <h4 class="quadrado-title">Cronograma</h4>
         <p>Monte o cronograma ideal para você.</p>
       </div>
       <div class="quadrado">
-        <img src="/imagens_projeto/agenda.svg" alt="Agenda" class="quadrado-image">
+        <a href="/agendamento2.html">
+          <img src="/imagens_projeto/agenda.svg" alt="Agenda" class="quadrado-image">
+        </a>
         <h4 class="quadrado-title">Agendamento</h4>
         <p>Agende uma conversa com nossos profissionais.</p>
       </div>

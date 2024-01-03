@@ -51,6 +51,70 @@ header {
     color: white;
     margin-left: 30px;
 }
+
+
+.header_menu_hide {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2%
+}
+
+.menu_hide {
+    flex: 1 1;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
+}
+.menu_hide li {
+    display: flex;
+    margin-right: 10px;
+    flex-basis: 100px;
+    background-color: #7cdaf9;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 5px 10px; /** **/
+}
+.menu_hide li a {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    flex: 1 1;
+}
+.menu_hide li:hover {
+    background-color: white;
+}
+.menu_hide li a:hover {
+    color: #64cbee;
+
+}
+
+#botao {
+    display: none;
+}
+label {
+    display: block;
+    margin-right: 15px;
+    font-size: 60px;
+    color: white;
+}
+
+label:hover {
+    color: rgb(240, 240, 240);
+
+}
+#botao:checked ~.menu_hide { /** quando o irmao de botao qie é menu for checado/ clicado o menude baixo aparece! **/
+    background-color:#7cdaf9;
+    display: block;
+    position: absolute;
+    top: 85px;
+    right: 0px;
+    width: 200px;
+}
 section {
     display: flex;
     flex-direction: column;

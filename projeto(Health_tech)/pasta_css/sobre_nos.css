@@ -1,237 +1,226 @@
-/*body {
-    margin:0;
-    padding: 0;
-    display:flex;
-    flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%
+
+}
+
+header {
+  /*background-color: #0cb7f2; */
+  background-color: #7cdaf9;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: 10%;
+}
+
+  
+.logo-container {
+  height: 100%;
+  width: 40%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 190px;
+  padding-left: 55px;
+
+}
+.name_logo {
+  max-width: 200px;
+}
+
+.menu {
+  height: 100%;
+  width: 60%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.menu a {
+  color: black;
+  margin-right: 10px;
+  padding-right: 55px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.menu a.ative {
+  color: white;
+  text-decoration:underline;
+}
+
+.menu_hide a.ative {
+  color: #0979b0;
+}
+
+/*  Mneu hide */
+
+
+.header_menu_hide {
+  height: 100%;
+  width: 50%;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2%
+}
+
+.menu_hide {
+  flex: 1 1;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  
+  
+}
+.menu_hide li {
+  display: flex;
+  margin-right: 10px;
+  flex-basis: 100px;
+  background-color: #7cdaf9;
+  border: 1px solid white;
+  margin: 5px;
+  padding: 5px 10px; /** **/
+}
+.menu_hide li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  flex: 1 1;
+}
+.menu_hide li:hover {
+  background-color: white;
+}
+.menu_hide li a:hover {
+  color: #7cdaf9;
+
+}
+
+#botao {
+  display: none;
+}
+label {
+  display: block;
+  margin-right: 15px;
+  font-size: 50px;
+  color: white;
+}
+
+label:hover {
+  color: rgb(240, 240, 240);
+
+}
+#botao:checked ~.menu_hide { /** quando o irmao de botao qie é menu for checado/ clicado o menude baixo aparece! **/
+  background-color:#7cdaf9;
+  display: block;
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  width: 200px;
+}
+  
+main {
+  height: 80%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.quadrado-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.quadrado {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #F0F0F0;
+  text-align: center;
+  width: 30%;
+  background-image: linear-gradient(to bottom, #004173, #7cdaf9);
+}
+
+.quadrado-image {
+  border-radius: 10px;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.quadrado-title {
+  margin-bottom: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  background-color: #7cdaf9;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-right: 0%;
+  margin-top: auto;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
   }
   
-  header {
-    background-color: #ADD8E6;
+  .hamburger-menu {
     display: flex;
     align-items: center;
-    padding: 10px;
-    height: 5%;
-  }
-  
-  .logo-container {
-    flex-grow: 1;
-    display:flex;
-    align-items: center;
-  }
-  
-  .logo {
-    max-width: 150px;
-    padding-left: 10px;
-    padding-top: 10px;
-  }
-  .logoname{
-    display:flex;
-    max-width:200px;
-    margin-top:8px;
-  }
-  
-  .menu a {
-    color: black;
     margin-right: 10px;
-    text-decoration: none;
   }
   
-  .menu a.ative {
-    color: white;
-    text-decoration:underline;
+  .hamburger-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
   }
   
-  button.button{
+  .hamburger-icon span {
+    display: block;
+    width: 24px;
+    height: 2px;
     background-color: black;
-    color:white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 0;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 100px;
   }
 
-  main {
-    flex-grow: 1;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .quadrado-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 20px;
-  }
-  
-  .quadrado {
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #F0F0F0;
-    text-align: center;
-    width: 20%;
-    background-image: linear-gradient(to bottom, #004173,#7cdaf9 );
-  }
-  
-  .quadrado-image {
-    border-radius: 10px;
-    width: 150px;
-    margin-bottom: 10px;
-  }
-  
-  .quadrado-title {
-    margin-bottom: 5px;
-  }
-  
-  footer {
-    display: flex;
-    background-color: #ADD8E6;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    padding-right: 0%;
-    height: 10%;
-  }*/
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  header {
-    background-color: #7cdaf9;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    height: 10%;
-  }
-  
-  .logo-container {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    max-width: 150px;
-    padding-left: 10px;
-    padding-top: 10px;
-  }
-  
   .logoname {
-    display: flex;
-    max-width: 200px;
-    margin-top: 8px;
+    max-width: 150px;
   }
-  
-  .menu a {
-    color: black;
-    margin-right: 10px;
-    text-decoration: none;
-  }
-  
-  .menu a.ative {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  button.button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 0;
-  }
-  
-  main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .quadrado-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 20px;
-  }
-  
+
   .quadrado {
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #F0F0F0;
-    text-align: center;
-    width: 30%;
-    background-image: linear-gradient(to bottom, #004173, #7cdaf9);
+    max-width:50px;
   }
-  
-  .quadrado-image {
-    border-radius: 10px;
-    width: 150px;
-    margin-bottom: 10px;
-  }
-  
-  .quadrado-title {
-    margin-bottom: 5px;
-  }
-  
-  footer {
-    display: flex;
-    background-color: #7cdaf9;
-    padding: 20px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    padding-right: 0%;
-    margin-top: auto;
-  }
-  @media screen and (max-width: 768px) {
-    .menu {
-      display: none;
-    }
-    
-    .hamburger-menu {
-      display: flex;
-      align-items: center;
-      margin-right: 10px;
-    }
-    
-    .hamburger-icon {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-    
-    .hamburger-icon span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background-color: black;
-      margin-bottom: 4px;
-    }
-  }
+}
 
-  @media (max-width: 480px) {
-    .logo {
-      max-width: 100px;
-    }
-  
-    .logoname {
-      max-width: 150px;
-    }
-  
-    .quadrado {
-      max-width:50px;
-    }
-  }
 
-  
- 
