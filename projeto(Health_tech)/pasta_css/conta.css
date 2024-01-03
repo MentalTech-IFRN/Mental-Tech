@@ -14,16 +14,20 @@ body{
     height: 100vh;
     width: 100%;
 }
+
+
 header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #ADD8E6;
+    background-color: #7cdaf9;
     width: 100%;
     height: 15%;
     padding: 20px;
 }
 .logo-container {
+    display: flex;
+    flex-direction: row;
     flex-grow: 1;
 }
 .logo {
@@ -31,17 +35,46 @@ header{
     padding-left: 55px;
     padding-top: 20px;
 }
+.menu {
+    height: 100%;
+    width: 60%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
 .menu a {
+    color: black;
+    margin-right: 10px;
+    padding-right: 55px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.menu a.ative {
+    color: white;
+    text-decoration:underline;
+}
+
+.menu button {
     color: black;
     margin-right: 10px;
     text-decoration: none;
     padding-right: 55px;
     font-size: 17px;
     font-family: arial;
+    background-color: #7cdaf9;
 }
-.menu a.ative {
+.menu button.ative {
     color: white;
     text-decoration:underline;
+}
+.menu button:hover{
+   color: white;
+}
+label{
+    display: none;
 }
 .container2{
     display: flex;
@@ -156,8 +189,6 @@ section{
     justify-content: center;
     width: 100%;
     height: 390px;
-    border-bottom: 1px solid black;
-    
 }
 .publicacoes-box2{
     display: flex;
@@ -226,14 +257,155 @@ button{
 }
 footer {
     display: flex;
-    background-color: #ADD8E6;
+    background-color: #7cdaf9;
     padding: 20px;
     justify-content: center;
     align-items: center;
-    color: white;
-    position:absolute;
+    color: black;
+    position:fixed;
     bottom: 0px;
     width:100%;
     height: 10%;
     font-family: arial;
+    font-size: 10px;
+    border-top: 1px solid black;
+}
+
+@media screen and (max-width: 992px) {
+    
+    header{
+        position: fixed;
+        border-bottom: 1px solid black;
+    }
+    .menu button{
+        font-size: 14px;
+        padding-right: 30px;
+    }
+    aside{
+        position: fixed;
+        top: 95px;
+    }
+    section{
+        height: 90vh;
+        width: 75%;
+        margin-left: 235px;
+        justify-content: end;
+    }
+    .informs{
+        height: 10%;
+    }
+    .publicacoes-box2{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        width: 100%;
+    }
+    #publicacao1{
+        width: 255px;
+    }
+    #publicacao2{
+        width: 255px;
+    }
+    #publicacao3{
+        width: 255px;
+    }
+    p{
+        margin-left: 20px;
+    }
+    footer{
+        position: fixed;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    header{
+        height: 10%;
+    }
+    .logo{
+        width: 160px;
+        height: 150px;
+        margin-left: -70px;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu button{
+        font-size: 15px;
+        padding-right: 5px;
+    }
+    label{
+        display: flex;
+        right: 100px;
+        color: white;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    aside{
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: 100%;
+        height: 20%;
+        margin-top: 60px;
+    }
+    section{
+        width: 100%;
+        height: 100vh;
+        justify-content: start;
+        margin-left: 0px;
+    }
+    .usuario{
+        width: 120px;
+        height: 130px;
+        margin-top: 25px;
+        margin-left: -100px;
+    }
+    .usuario img{
+        width: 80px;
+        height: 80px;
+    }
+    .informacoes{
+        height: 130px;
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    .informs{
+        height: 55px;
+        margin-left: -10px;
+    }
+    #principal{
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    .publicacoes{
+        margin-top: 170px;
+    }
+    .publicacoes-box2{
+        height: 700px;
+    }
+    #publicacao1{
+        width: 370px;
+        height: 200px;
+        margin-bottom: -5px;
+    }
+    #publicacao2{
+        width: 370px;
+        height: 200px;
+        margin-bottom: -5px;
+    }
+    #publicacao3{
+        width: 370px;
+        height: 200px;
+    }
+    .funcoes{
+        margin-top: 40px;
+    }
+    footer{
+        position: fixed;
+        height: 8%;
+    }
 }

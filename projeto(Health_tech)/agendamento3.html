@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="pasta_css/agendamento3.css">
+    <link rel="stylesheet" href="/pasta_css/agendamento3.css">
 </head>
 <body>
     <div class="conteiner">
         <header>
-            <img src="imagens_projeto/logo.svg" class="logo">
+            <img src="/imagens_projeto/logo.svg" class="logo">
             <div class="cabecalho">
                 <h1>Agendamentos online</h1>
-                <div class="opcions">
+
+
+                <button class="menu-troca" onclick="trocaMenu()">&#9776</button>
+                <nav class="menu">
                     <a href="agendamento2.html"><h2>Psicóloga</h2></a>
-                    <a href=""><h2 style="color: black;">Nutricionista</h2></a>
+                    <a href=""><h2 style="color: black;" >Nutricionista</h2></a>
+                </nav>
+           
+                <div class="opcions">
+                    <a href="agendamento2.html" id="links" ><h2>Psicóloga</h2></a>
+                    <a href="" id="links"><h2 style="color: black;">Nutricionista</h2></a>
                 </div>
             </div>
             
@@ -27,20 +35,26 @@
 
             <div class="org">
                 <div class="opc">
-                    <h4>Selecione o hórario desejado na lista abaibo.</h4>
+                    <h4>Selecione o hórario desejado na lista abaixo.</h4>
                 </div>
                 <div class="especifica">
                     <div class="afasta">
                         <p>Data</p>
                     </div>
-                    <p>Hórarios:</p>
-                    <div class="menu">
-                        <div class="cinza"></div>
-                        <p>Disponível</p>
-
-                        <div class="azul"></div>
-                        <p>Reservado</p>
+                    <div class="horarios" id="h" >
+                        <p>Hórarios:</p>
+                        <div class="menu_cores">
+                            <div class="mm">
+                                <div class="cinza"></div>
+                                <p>Disponível</p>
+                            </div>
+                            <div class="mm">
+                                <div class="azul"></div>
+                            <p>Reservado</p>
+                            </div>
+                        </div>
                     </div>
+                    
                     
                 </div>
             </div>
@@ -49,17 +63,18 @@
                 <div class="especifica">
                     <div class="afasta">
                         <p>Segunda</p>
-                    </div>                        
-                    <button>08:00</button>
-                    <button>08:30</button>
-                    <button>09:00</button>
-                    <button>09:30</button>
-                    <button>10:00</button>
-                    <button>10:30</button>
-                    <button>11:00</button>
-                    <button>11:30</button>
-                    <button>12:00</button>                   
-                    
+                    </div> 
+                    <div class="horarios n u">
+                        <button class="hr">08:00</button class="hr">
+                        <button class="hr">08:30</button class="hr">
+                        <button class="hr">09:00</button class="hr">
+                        <button class="hr">09:30</button class="hr">
+                        <button class="hr">10:00</button class="hr">
+                        <button class="hr">10:30</button class="hr">
+                        <button class="hr">11:00</button class="hr">
+                        <button class="hr">11:30</button class="hr">
+                        <button class="hr">12:00</button class="hr"> 
+                    </div>                       
                 </div>
             </div>
 
@@ -68,15 +83,17 @@
                     <div class="afasta">
                         <p>Terça</p>
                     </div>                        
-                    <button>13:00</button>
-                    <button>13:30</button>
-                    <button>14:00</button>
-                    <button>14:30</button>
-                    <button>15:00</button>
-                    <button>15:30</button>
-                    <button>16:00</button>
-                    <button>16:30</button>
-                    <button>17:00</button>                   
+                    <div class="horarios n u">
+                        <button class="hr">13:00</button>
+                        <button class="hr">13:30</button>
+                        <button class="hr">14:00</button>
+                        <button class="hr">14:30</button>
+                        <button class="hr">15:00</button>
+                        <button class="hr">15:30</button>
+                        <button class="hr">16:00</button>
+                        <button class="hr">16:30</button>
+                        <button class="hr">17:00</button>
+                    </div>                   
                     
                 </div>
             </div>
@@ -86,11 +103,13 @@
                     <div class="afasta">
                         <p>Quarta</p>
                     </div>                        
-                    <button>08:00</button>
-                    <button>08:30</button>
-                    <button>09:00</button>
-                    <button>09:30</button>
-                    <button>10:00</button>  
+                    <div class="horarios n">
+                        <button class="hr">08:00</button>
+                        <button class="hr">08:30</button>
+                        <button class="hr">09:00</button>
+                        <button class="hr">09:30</button>
+                        <button class="hr">10:00</button>
+                    </div>    
                 </div>
             </div>
 
@@ -99,11 +118,13 @@
                     <div class="afasta">
                         <p>Quinta</p>
                     </div>                        
-                    <button>14:00</button>
-                    <button>14:30</button>
-                    <button>15:00</button>
-                    <button>15:30</button>
-                    <button>16:00</button>                 
+                    <div class="horarios n">
+                        <button class="hr">14:00</button>
+                        <button class="hr">14:30</button>
+                        <button class="hr">15:00</button>
+                        <button class="hr">15:30</button>
+                        <button class="hr">16:00</button>
+                    </div>                 
                     
                 </div>
             </div>
@@ -119,5 +140,6 @@
             </div>
         </section>
     </div>
+    <script src="/pasta_js/click.js"></script>
 </body>
 </html>

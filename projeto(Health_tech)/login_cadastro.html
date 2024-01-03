@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/pasta_css/login_cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div id="imagem">
+                <img src="/imagens_projeto/Bem vindo.png">
+            </div>
+        </aside>
+            
+        
+        <section>
+            <div class="form">
+                <div class="login">
+                    <div class="btcolor"></div>
+                    <button id="btlogin">Login</button>
+                    <button id="btcadastro">Cadastro</button>
+                </div>
+                <form id="login">
+                    <input type="email" id="emailId" placeholder="Email ou número de telefone">
+                    <input type="password" id="senhaId" placeholder="Senha">
+                    <input id="entrar" type="button" onclick="validacaologin()" value="Entrar">
+                </form>
+                <div class="lembrar">
+                    <input type="checkbox" id="checkId">
+                    <label for="checkId">Lembrar senha</label>
+                </div>
+                <div class="conectar-login">
+                    <h5 style="color: rgb(94, 92, 92); ">Entrar com:</h5>
+                    <div>
+                        <a href="https://accounts.google.com"><img src="/imagens_projeto/google.png"></a>
+                        <a href="https://pt-br.facebook.com/"><img src="/imagens_projeto/facebook.png"></a>
+                        <a href="https://www.instagram.com/?hl=en"><img src="/imagens_projeto/Instagram.webp"></a>
+                    </div>
+                </div>
+
+                <form id="cadastro">
+                    <div id="nome">
+                        <input type="text" id="nomeId" placeholder="Nome">
+                        <input type="text" id="sobrenomeId" placeholder="Sobrenome">
+                    </div>
+                    <input type="email" id="emailId2" placeholder="Email ou número de telefone">
+                    <input type="password" id="senhaId1" placeholder="Senha">
+                    <input type="password" id="senhaId2" placeholder="Digite novamente a senha">
+                    <input id="entrar" type="button" onclick="validacaocadastro()" value="Criar uma conta">
+                </form>
+                <div class="concordo">
+                    <input type="checkbox" id="checkId">
+                    <label for="checkId">Li e concordo com os termos de serviço</label>
+                </div>
+                <div class="conectar-cadastro">
+                    <h5 style="color: rgb(94, 92, 92); ">Entrar com:</h5>
+                    <div>
+                        <a href="https://accounts.google.com"><img src="/imagens_projeto/google.png"></a>
+                        <a href="https://pt-br.facebook.com/"><img src="/imagens_projeto/facebook.png"></a>
+                        <a href="https://www.instagram.com/?hl=en"><img src="/imagens_projeto/Instagram.webp"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/pasta_js/login_cadastro.js"></script>
+</body>
+</html>

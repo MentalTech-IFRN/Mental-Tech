@@ -24,7 +24,7 @@ header {
     flex-direction: row;
     width: 100%;
     height: 15%;
-    background-color: #64cbee;
+    background-color: #7cdaf9;
     align-items: center;
     justify-content: flex-start;
     border-bottom: 2px solid #64cbee;  
@@ -47,8 +47,8 @@ header {
     
 }
 .img_header img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
 .text_header h2{
     font-size: 50px;
@@ -106,7 +106,7 @@ header {
     display: flex;
     margin-right: 10px;
     flex-basis: 100px;
-    background-color: #64cbee;
+    background-color: #7cdaf9;
     border: 1px solid white;
     margin: 5px;
     padding: 5px 10px; /** **/
@@ -140,10 +140,10 @@ label:hover {
 
 }
 #botao:checked ~.menu_hide { /** quando o irmao de botao qie é menu for checado/ clicado o menude baixo aparece! **/
-    background-color:#64cbee;
+    background-color:#7cdaf9;
     display: block;
     position: absolute;
-    top: 100px;
+    top: 85px;
     right: 0px;
     width: 200px;
 }
@@ -165,7 +165,7 @@ aside {
     align-items: center;
     width: 20%;
     height: 100%;
-    background-color: #64cbee;
+    background-color: #7cdaf9;
     background-color: black;
     border-right: 2px solid rgb(199, 199, 199);
 }
@@ -193,15 +193,27 @@ aside {
 
 #menu_aside ul li a{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color: rgb(94, 93, 93);
     color: white;
     font-weight: bold;
+    text-decoration: none;
 
 }
 #menu_aside ul li a:hover {
     font-size: 20px;
 
+}
+.menu_hide li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1 1;
+}
+.menu_hide a.ative {
+    color: #0979b0;
 }
 #menu_aside ul li #menu_selected {
     color: #64cbee;
@@ -314,7 +326,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #64cbee;
+    background-color: #7cdaf9;
     
 }
 
@@ -386,7 +398,7 @@ aside {
 .b4 {
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(to right, #64cbee 30%, white 60%);
+    background-image: linear-gradient(to right,#7cdaf9 30%, white 60%);
 
 }
 
@@ -434,7 +446,7 @@ footer {
     justify-content: center;
     width: 100%;
     height: 10%;
-    background-color: #64cbee;
+    background-color: #7cdaf9;
 }
 
 footer p {
@@ -476,7 +488,7 @@ footer p {
 
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1160px) {
 
 
     section {
@@ -588,6 +600,11 @@ footer p {
     .b4_imgs img {
         width: 75px;
         height: 75px;
+    }
+    .menu_hide li a {
+        font-size: 15px;
+        font-weight: bold;
+        flex: 1 1;
     }
     
 }

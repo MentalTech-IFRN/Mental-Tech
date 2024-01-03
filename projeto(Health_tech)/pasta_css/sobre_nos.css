@@ -1,38 +1,39 @@
-*{
+/*body {
     margin:0;
-    padding:0;
-}
-
-body {
-    height: 100vh ;
-    width:100% ;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
   }
   
   header {
     background-color: #ADD8E6;
     display: flex;
     align-items: center;
-    padding: 20px;
-    width: 100%;
-    height: 10%;
-    font-size: 20px;
+    padding: 10px;
+    height: 5%;
   }
   
   .logo-container {
     flex-grow: 1;
+    display:flex;
+    align-items: center;
   }
   
   .logo {
     max-width: 150px;
-    padding-left: 55px;
-    padding-top: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .logoname{
+    display:flex;
+    max-width:200px;
+    margin-top:8px;
   }
   
   .menu a {
     color: black;
     margin-right: 10px;
     text-decoration: none;
-    padding-right: 55px;
   }
   
   .menu a.ative {
@@ -40,48 +41,197 @@ body {
     text-decoration:underline;
   }
   
-  main {
-    padding: 20px;
-    text-align: center;
+  button.button{
+    background-color: black;
+    color:white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0;
   }
-  
-  .main-title {
+
+  main {
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     text-align: center;
   }
   
   .quadrado-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    padding-top: 40px;
+    gap: 20px;
+    padding-top: 20px;
   }
   
   .quadrado {
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     background-color: #F0F0F0;
     text-align: center;
     width: 20%;
-    background-image: linear-gradient(to top, #ADD8E6,lightpink );
+    background-image: linear-gradient(to bottom, #004173,#7cdaf9 );
   }
   
   .quadrado-image {
     border-radius: 10px;
-    width: 200px;
-    margin-bottom: 20px;
-  }
-  
-  .quadrado-title {
+    width: 150px;
     margin-bottom: 10px;
   }
   
+  .quadrado-title {
+    margin-bottom: 5px;
+  }
+  
   footer {
+    display: flex;
     background-color: #ADD8E6;
     padding: 20px;
     text-align: center;
     color: white;
-    position:absolute;
-    bottom:0;
-    width:100%;
-    font-weight:bold;
+    padding-right: 0%;
+    height: 10%;
+  }*/
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
+  
+  header {
+    background-color: #7cdaf9;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 10%;
+  }
+  
+  .logo-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  
+  .logoname {
+    display: flex;
+    max-width: 200px;
+    margin-top: 8px;
+  }
+  
+  .menu a {
+    color: black;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .menu a.ative {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  button.button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0;
+  }
+  
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .quadrado-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  
+  .quadrado {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F0F0F0;
+    text-align: center;
+    width: 30%;
+    background-image: linear-gradient(to bottom, #004173, #7cdaf9);
+  }
+  
+  .quadrado-image {
+    border-radius: 10px;
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .quadrado-title {
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    display: flex;
+    background-color: #7cdaf9;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-right: 0%;
+    margin-top: auto;
+  }
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+    
+    .hamburger-menu {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+    
+    .hamburger-icon {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .hamburger-icon span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: black;
+      margin-bottom: 4px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .logo {
+      max-width: 100px;
+    }
+  
+    .logoname {
+      max-width: 150px;
+    }
+  
+    .quadrado {
+      max-width:50px;
+    }
+  }
+
+  
+ 

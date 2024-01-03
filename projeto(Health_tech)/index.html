@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="pasta_css/style.css">
+  <link rel="stylesheet" href="/pasta_css/style.css">
   <title>Mental Tech</title>
 </head>
 
 <body>
   <header>
     <div class="logo-container">
-      <img src="imagens_projeto/logo.svg" alt="Logo" class="logo">
+      <img src="/imagens_projeto/logoMentalTech.svg" alt="Logo" class="logo">
+      <img src="/imagens_projeto/nome mt.svg" alt="nome Mental Tech" class="logoname">
     </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle"></label>
     <nav class="menu">
-      <a href="index.html" class="ative">Página inicial</a>
-      <a href="dashboard.html">Painel de Controle</a>
+      <a href="index.html">Página inicial</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="cronograma.html" class="ative">Cronograma</a>
       <a href="conta.html">Conta</a>
       <a href="sobre_nos.html">Sobre nós</a>
+      <button class="button">Conta</button>
     </nav>
   </header>
-
+  <div class="textos">
+    <h2>Cuidar da sua saúde mental e física é importante!</h2>
+    <wbr>
+    <p>Use o site Mental Tech para ajudar a controlar sua rotina.</p>
+    <wbr>
+    <p>Lembre-se: você em primeiro lugar!</p>
+    <wbr>
+    <h3>Use nossas ferramentas para facilitar, converse com profissionais, programe sua agenda. </h3>
+    <img id="gif" src="/imagens_projeto/animaç╞o.gif">
+  </div>
   <main>
     <div class="quadrado-container">
       <div class="quadrado">
-        <img src="imagens_projeto/conversa.svg" alt="Conversa" class="quadrado-image">
+        <img src="/imagens_projeto/conversa.svg" alt="Conversa" class="quadrado-image">
         <h4 class="quadrado-title">Chat de interação</h4>
         <p>Acesse o chat e se comunique com outros estudantes.</p>
       </div>
       <div class="quadrado">
-        <img src="imagens_projeto/calendario.svg" alt="Calendário" class="quadrado-image">
+        <img src="/imagens_projeto/calendario.svg" alt="Calendário" class="quadrado-image">
         <h4 class="quadrado-title">Cronograma</h4>
         <p>Monte o cronograma ideal para você.</p>
       </div>
       <div class="quadrado">
-        <img src="imagens_projeto/agenda.svg" alt="Agenda" class="quadrado-image">
+        <img src="/imagens_projeto/agenda.svg" alt="Agenda" class="quadrado-image">
         <h4 class="quadrado-title">Agendamento</h4>
         <p>Agende uma conversa com nossos profissionais.</p>
       </div>
@@ -47,3 +62,4 @@
 </body>
 
 </html>
+
